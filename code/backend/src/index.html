@@ -45,6 +45,7 @@
         <p>This API allows interaction with beehive data, camera records, and user information for the Beehive Monitoring System.</p>
     </header>
 
+    <!-- User Endpoints Section -->
     <section>
         <h2>User Endpoints</h2>
         <div>
@@ -52,13 +53,11 @@
             <p>Register a new user. Send user details in the request body.</p>
             <code>curl -X POST http://beehive-backend.eba-xkm8nww8.us-west-2.elasticbeanstalk.com/api/user/register -d '{"email":"example@beezee.com", "username": "user", "password": "Pass123!"}'</code>
         </div>
-
         <div>
             <h3>POST /api/user/login</h3>
             <p>Login for existing users. Returns a token on successful authentication.</p>
             <code>curl -X POST http://beehive-backend.eba-xkm8nww8.us-west-2.elasticbeanstalk.com/api/user/login -d '{"email":"example@beezee.com", "password": "Pass123!"}'</code>
         </div>
-
         <div>
             <h3>GET /api/user/current</h3>
             <p>Get current user details. Requires a valid token.</p>
@@ -66,6 +65,7 @@
         </div>
     </section>
 
+    <!-- Beehive Endpoints Section -->
     <section>
         <h2>Beehive Endpoints</h2>
         <div>
@@ -73,21 +73,16 @@
             <p>Retrieve all beehives. Requires a valid token.</p>
             <code>curl -X GET http://beehive-backend.eba-xkm8nww8.us-west-2.elasticbeanstalk.com/api/beehive -H "Authorization: Bearer YourToken"</code>
         </div>
-
         <div>
             <h3>POST /api/beehive</h3>
             <p>Create a new beehive record. Requires a valid token.</p>
             <code>curl -X POST http://beehive-backend.eba-xkm8nww8.us-west-2.elasticbeanstalk.com/api/beehive -d '{"location": "location1", "type": "type1"}' -H "Authorization: Bearer YourToken"</code>
         </div>
-
-        <!-- New Endpoint: Update a beehive record -->
         <div>
             <h3>PUT /api/beehive/{id}</h3>
             <p>Update an existing beehive record by ID. Requires a valid token and beehive ID.</p>
             <code>curl -X PUT http://beehive-backend.eba-xkm8nww8.us-west-2.elasticbeanstalk.com/api/beehive/{id} -d '{"location": "newLocation", "type": "newType"}' -H "Authorization: Bearer YourToken"</code>
         </div>
-
-        <!-- New Endpoint: Delete a beehive record -->
         <div>
             <h3>DELETE /api/beehive/{id}</h3>
             <p>Delete an existing beehive record by ID. Requires a valid token and beehive ID.</p>
@@ -95,6 +90,7 @@
         </div>
     </section>
 
+    <!-- Camera Record Endpoints Section -->
     <section>
         <h2>Camera Record Endpoints</h2>
         <div>
@@ -102,21 +98,16 @@
             <p>Retrieve all camera records. Requires a valid token.</p>
             <code>curl -X GET http://beehive-backend.eba-xkm8nww8.us-west-2.elasticbeanstalk.com/api/camera -H "Authorization: Bearer YourToken"</code>
         </div>
-
         <div>
             <h3>POST /api/camera</h3>
             <p>Create a new camera record. Requires a valid token.</p>
             <code>curl -X POST http://beehive-backend.eba-xkm8nww8.us-west-2.elasticbeanstalk.com/api/camera -d '{"record": "recordData"}' -H "Authorization: Bearer YourToken"</code>
         </div>
-
-        <!-- New Endpoint: Update a camera record -->
         <div>
             <h3>PUT /api/camera/{recordId}</h3>
             <p>Update an existing camera record by record ID. Requires a valid token and record ID.</p>
             <code>curl -X PUT http://beehive-backend.eba-xkm8nww8.us-west-2.elasticbeanstalk.com/api/camera/{recordId} -d '{"newRecordData": "data"}' -H "Authorization: Bearer YourToken"</code>
         </div>
-
-        <!-- New Endpoint: Delete a camera record -->
         <div>
             <h3>DELETE /api/camera/{recordId}</h3>
             <p>Delete an existing camera record by record ID. Requires a valid token and record ID.</p>
@@ -124,6 +115,7 @@
         </div>
     </section>
 
+    <!-- Footer Section -->
     <footer>
         <p>For more details or support, please visit the <a href="https://cepdnaclk.github.io/e19-3yp-beehive-monitoring-system/">Beehive Monitoring System Project Page</a>.</p>
     </footer>
