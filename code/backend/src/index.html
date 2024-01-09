@@ -67,7 +67,7 @@
     </section>
 
     <section>
-        <h2>Beehive Endpoints(Incomplete)</h2>
+        <h2>Beehive Endpoints</h2>
         <div>
             <h3>GET /api/beehive</h3>
             <p>Retrieve all beehives. Requires a valid token.</p>
@@ -80,11 +80,23 @@
             <code>curl -X POST http://beehive-backend.eba-xkm8nww8.us-west-2.elasticbeanstalk.com/api/beehive -d '{"location": "location1", "type": "type1"}' -H "Authorization: Bearer YourToken"</code>
         </div>
 
-        <!-- Additional Beehive endpoints here -->
+        <!-- New Endpoint: Update a beehive record -->
+        <div>
+            <h3>PUT /api/beehive/{id}</h3>
+            <p>Update an existing beehive record by ID. Requires a valid token and beehive ID.</p>
+            <code>curl -X PUT http://beehive-backend.eba-xkm8nww8.us-west-2.elasticbeanstalk.com/api/beehive/{id} -d '{"location": "newLocation", "type": "newType"}' -H "Authorization: Bearer YourToken"</code>
+        </div>
+
+        <!-- New Endpoint: Delete a beehive record -->
+        <div>
+            <h3>DELETE /api/beehive/{id}</h3>
+            <p>Delete an existing beehive record by ID. Requires a valid token and beehive ID.</p>
+            <code>curl -X DELETE http://beehive-backend.eba-xkm8nww8.us-west-2.elasticbeanstalk.com/api/beehive/{id} -H "Authorization: Bearer YourToken"</code>
+        </div>
     </section>
 
     <section>
-        <h2>Camera Record Endpoints(Incomplete and Incorrect)</h2>
+        <h2>Camera Record Endpoints</h2>
         <div>
             <h3>GET /api/camera</h3>
             <p>Retrieve all camera records. Requires a valid token.</p>
@@ -95,6 +107,20 @@
             <h3>POST /api/camera</h3>
             <p>Create a new camera record. Requires a valid token.</p>
             <code>curl -X POST http://beehive-backend.eba-xkm8nww8.us-west-2.elasticbeanstalk.com/api/camera -d '{"record": "recordData"}' -H "Authorization: Bearer YourToken"</code>
+        </div>
+
+        <!-- New Endpoint: Update a camera record -->
+        <div>
+            <h3>PUT /api/camera/{recordId}</h3>
+            <p>Update an existing camera record by record ID. Requires a valid token and record ID.</p>
+            <code>curl -X PUT http://beehive-backend.eba-xkm8nww8.us-west-2.elasticbeanstalk.com/api/camera/{recordId} -d '{"newRecordData": "data"}' -H "Authorization: Bearer YourToken"</code>
+        </div>
+
+        <!-- New Endpoint: Delete a camera record -->
+        <div>
+            <h3>DELETE /api/camera/{recordId}</h3>
+            <p>Delete an existing camera record by record ID. Requires a valid token and record ID.</p>
+            <code>curl -X DELETE http://beehive-backend.eba-xkm8nww8.us-west-2.elasticbeanstalk.com/api/camera/{recordId} -H "Authorization: Bearer YourToken"</code>
         </div>
     </section>
 
