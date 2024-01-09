@@ -84,11 +84,19 @@
             <p>Update an existing beehive record by ID. Requires a valid token and beehive ID.</p>
             <code>curl -X PUT http://beehive-backend.eba-xkm8nww8.us-west-2.elasticbeanstalk.com/api/beehive/{id} -d '{"location": "newLocation", "type": "newType"}' -H "Authorization: Bearer YourToken"</code>
         </div>
+        
         <div>
             <h3>DELETE /api/beehive/{id}</h3>
             <p>Delete an existing beehive record by ID. Requires a valid token and beehive ID.</p>
             <code>curl -X DELETE http://beehive-backend.eba-xkm8nww8.us-west-2.elasticbeanstalk.com/api/beehive/{id} -H "Authorization: Bearer YourToken"</code>
         </div>
+        <div>
+            <h3>GET /api/beehive/{id}</h3>
+            <p>Retrieve details of a specific beehive by ID. Requires a valid token and beehive ID.</p>
+            <code>curl -X GET http://beehive-backend.eba-xkm8nww8.us-west-2.elasticbeanstalk.com/api/beehive/{id} -H "Authorization: Bearer YourToken"</code>
+        </div>
+        
+
     </section>
 
     <!-- Camera Record Endpoints Section -->
@@ -116,7 +124,7 @@
         </div>
     </section>
 
-    <!-- Footer Section -->
+    <!-- Footer Section --> 
     <footer>
         <p>For more details or support, please visit the <a href="https://cepdnaclk.github.io/e19-3yp-beehive-monitoring-system/">Beehive Monitoring System Project Page</a>.</p>
     </footer>
