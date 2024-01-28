@@ -32,12 +32,14 @@ Manually detecting when bees abandon a beehive is challenging and often leads to
 ## 🐝 Solution
 <!-- Solution -->
 Our solution involves the deployment of camera sensors at the beehive entrance. These sensors capture data that is processed by an artificial intelligence (AI) model. The AI model distinguishes between bees carrying pollen and those that do not, offering a more accurate and timely indication of potential absconding events.
+
 <!-- Our solution involves the deployment of camera sensors at the beehive entrance. These sensors capture data that is processed by an artificial intelligence (AI) model. The AI model distinguishes between bees carrying pollen and those that do not, offering a more accurate and timely indication of potential absconding events. -->
 
 <!-- checked -->
 
 
 ## 🐝 Features
+## 🐝 Solution
 
 Our Smart Beehive Monitoring System offers the following features:
 
